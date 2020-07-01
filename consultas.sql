@@ -22,7 +22,7 @@ ORDER BY origin ASC, colYear ASC, colMonth ASC;
 SELECT AIR.city, colYear, colMonth, AVG (ArrTime) AS promedio_llegada
 FROM flights AS FL, usairports AS 
 WHERE FL.Origin = usairports.iata  
-GROUP BY AIR.City ASC, FL.colYear ASC, FL.col.Month ASC; 
+ORDER BY AIR.City ASC, FL.colYear ASC, FL.col.Month ASC; 
 
 /*5. Las compañías con más vuelos cancelados, por meses y año. Además, deben estar ordenadas de forma que las compañías con más cancelaciones aparezcan las primeras.  */
 
